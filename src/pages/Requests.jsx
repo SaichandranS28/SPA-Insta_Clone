@@ -2,6 +2,7 @@ import UserCard from "../components/UserCard";
 import users from "../components/Users";
 
 function Requests(){
+
     return(
         <>
          <div className="w-[450px] mx-auto mt-16 mb-8">
@@ -10,7 +11,7 @@ function Requests(){
          </div>
         
         {
-            users.map(user=><UserCard key={user.id} img={user.image} name={user.name} username={user.username}/>)
+            users.map(user=><UserCard key={user.id_no} img={user.image} name={user.name} username={user.username}/>)
         }
         </>
     )

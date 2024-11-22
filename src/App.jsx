@@ -6,6 +6,8 @@ import Error from "./pages/Error";
 import Navbar from "./components/Navbar";
 import Requests from "./pages/Requests";
 import UserDetails from "./pages/UserDetails";
+import Post from "./pages/Post";
+import Feed from "./components/Feed";
 
 function App(){
   return(
@@ -18,6 +20,7 @@ function App(){
       <Route path="/contact" element={<Contact />} />
       <Route path="/requests" element={<Requests />} />
       <Route path="/requests/:username" element={<UserDetails />}/>
+      <Route path="/posts/:id" element={<Post />} />
       <Route path="*" element={<Error />} />
     </Routes>
 
